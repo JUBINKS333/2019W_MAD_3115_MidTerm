@@ -28,12 +28,13 @@ class LoginViewController: UIViewController {
     @IBAction func btnLogin(_ sender: Any) {
         
         
-     let user = Student(uId: "123", pass: "123")
+     let user = Student(uId: "admin", pass: "admin@123")
         let a = username.text
         let b = password.text
         
         
         if( user.verifyLogin(usId:a!, pass:b!)==true)
+        
         {
             print("login success")
             

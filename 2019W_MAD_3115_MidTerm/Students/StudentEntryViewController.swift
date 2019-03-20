@@ -9,7 +9,40 @@
 import UIKit
 
 class StudentEntryViewController: UIViewController {
+    
+    
+    @IBOutlet weak var stdID: UITextField!
+    
+    @IBOutlet weak var stdName: UITextField!
+    
+    
+    @IBOutlet weak var stdGender: UITextField!
+    
 
+    @IBOutlet weak var stdCourse: UITextField!
+    
+    @IBOutlet weak var stdEmail: UITextField!
+    
+    @IBOutlet weak var stdBdate: UITextField!
+    
+    
+    @IBOutlet weak var mark1: UITextField!
+    
+    @IBOutlet weak var mark2: UITextField!
+    
+    
+    @IBOutlet weak var mark3: UITextField!
+    @IBOutlet weak var mark4: UITextField!
+    
+    @IBOutlet weak var mark5: UITextField!
+    
+    @IBOutlet weak var percentage: UITextField!
+    
+    @IBOutlet weak var totalmarks: UITextField!
+    
+    @IBOutlet weak var grade: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
