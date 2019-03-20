@@ -7,3 +7,32 @@
 //
 
 import Foundation
+import Foundation
+
+class Student{
+    var username:String
+    var password:String
+    
+
+    init(){
+        self.username=String()
+        self.password=String()
+       
+    }
+    init(uId:String,pass:String){
+        self.username=uId
+        
+        
+        self.password=pass
+        
+    }
+    func verifyLogin(usId:String , pass:String) -> Bool{
+        if(self.username == usId && self.password == pass){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+}
