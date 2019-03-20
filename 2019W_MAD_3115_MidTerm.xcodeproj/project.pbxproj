@@ -17,6 +17,7 @@
 		9BAC0C352241C898002252C8 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC0C342241C898002252C8 /* Student.swift */; };
 		9BAC0C382241C8C7002252C8 /* StudentEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC0C372241C8C7002252C8 /* StudentEntryViewController.swift */; };
 		9BAC0C3A2241C8DC002252C8 /* StudentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC0C392241C8DC002252C8 /* StudentResultViewController.swift */; };
+		9BE9E2F52242F54E00972A6D /* student.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BE9E2F42242F54E00972A6D /* student.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9BAC0C342241C898002252C8 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		9BAC0C372241C8C7002252C8 /* StudentEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEntryViewController.swift; sourceTree = "<group>"; };
 		9BAC0C392241C8DC002252C8 /* StudentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultViewController.swift; sourceTree = "<group>"; };
+		9BE9E2F42242F54E00972A6D /* student.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = student.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		9BAC0C042241C855002252C8 /* 2019W_MAD_3115_MidTerm */ = {
 			isa = PBXGroup;
 			children = (
+				9BE9E2EF2242F44C00972A6D /* images */,
 				9BAC0C362241C8A0002252C8 /* Students */,
 				9BAC0C332241C87A002252C8 /* Model */,
 				9BAC0C052241C855002252C8 /* AppDelegate.swift */,
@@ -148,6 +151,14 @@
 				9BAC0C392241C8DC002252C8 /* StudentResultViewController.swift */,
 			);
 			path = Students;
+			sourceTree = "<group>";
+		};
+		9BE9E2EF2242F44C00972A6D /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9BE9E2F42242F54E00972A6D /* student.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			files = (
 				9BAC0C102241C857002252C8 /* LaunchScreen.storyboard in Resources */,
 				9BAC0C0D2241C857002252C8 /* Assets.xcassets in Resources */,
+				9BE9E2F52242F54E00972A6D /* student.png in Resources */,
 				9BAC0C0B2241C855002252C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +473,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LD4H9PGYY;
 				INFOPLIST_FILE = 2019W_MAD_3115_MidTerm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,7 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LD4H9PGYY;
 				INFOPLIST_FILE = 2019W_MAD_3115_MidTerm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
