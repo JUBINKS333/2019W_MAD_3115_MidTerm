@@ -301,7 +301,21 @@
                                 <rect key="frame" x="0.0" y="55" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="STUDENT DATA ENTRY FORM" id="UnX-sT-CME"/>
+                                    <navigationItem title="STUDENT DATA ENTRY FORM" id="UnX-sT-CME">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="eJ5-XU-5AH">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wKv-bd-QJH">
+                                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="LOG OUT"/>
+                                                <connections>
+                                                    <segue destination="BYZ-38-t0r" kind="show" id="R9c-7n-gH0"/>
+                                                </connections>
+                                            </button>
+                                            <connections>
+                                                <action selector="btnLogout:" destination="RSG-H0-aN8" id="ZfG-j1-SOb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
@@ -452,4 +466,7 @@
             <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="R9c-7n-gH0"/>
+    </inferredMetricsTieBreakers>
 </document>

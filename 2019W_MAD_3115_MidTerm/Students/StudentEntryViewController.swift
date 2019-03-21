@@ -42,7 +42,14 @@ class StudentEntryViewController: UIViewController {
     
     @IBOutlet weak var grade: UITextField!
     
- 
+    @IBAction func btnLogout(_ sender: Any) {
+        
+        
+        
+        
+    }
+    
+    
     @IBAction func stdResult(_ sender: UIButton) {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let resultVC = sb.instantiateViewController(withIdentifier: "resultVC")
