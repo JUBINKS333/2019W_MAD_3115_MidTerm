@@ -42,6 +42,16 @@ class StudentEntryViewController: UIViewController {
     
     @IBOutlet weak var grade: UITextField!
     
+ 
+    @IBAction func stdResult(_ sender: UIButton) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let resultVC = sb.instantiateViewController(withIdentifier: "resultVC")
+        self.navigationController?.pushViewController(resultVC, animated: true)
+        
+        
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
