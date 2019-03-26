@@ -8,7 +8,13 @@
 
 import UIKit
 
-class StudentEntryViewController: UIViewController {
+class StudentEntryViewController: UIViewController,UIPickerViewDataSource,UIPickerViewDelegate{
+    
+    let courseList=["MADT","QMT","LMT"]
+    
+    
+    
+    
     
     
     @IBOutlet weak var stdID: UITextField!
@@ -19,12 +25,13 @@ class StudentEntryViewController: UIViewController {
     @IBOutlet weak var stdGender: UITextField!
     
 
-    @IBOutlet weak var stdCourse: UITextField!
+ 
     
     @IBOutlet weak var stdEmail: UITextField!
     
     @IBOutlet weak var stdBdate: UITextField!
     
+    @IBOutlet weak var stdCourse: UIPickerView!
     
     @IBOutlet weak var mark1: UITextField!
     
@@ -62,8 +69,32 @@ class StudentEntryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.stdCourse.delegate=self
+        self.stdCourse.dataSource=self
 
-        // Do any additional setup after loading the view.
+       
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        
+        return 1
+        
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        
+        
+        return 3
+        
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        
+        return courseList[row]
+        
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
     }
     
 
